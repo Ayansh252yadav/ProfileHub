@@ -11,7 +11,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-const API_BASE_URL = "http://localhost:8080";
+// const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://profilehub-iudu.onrender.com";
 
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
