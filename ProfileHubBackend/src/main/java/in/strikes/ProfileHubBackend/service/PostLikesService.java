@@ -1,6 +1,5 @@
 package in.strikes.ProfileHubBackend.service;
 
-import com.sun.jdi.request.DuplicateRequestException;
 import in.strikes.ProfileHubBackend.dto.PostLikeRequestDto;
 import in.strikes.ProfileHubBackend.dto.PostRequestDto;
 import in.strikes.ProfileHubBackend.entity.Post;
@@ -46,7 +45,7 @@ public class PostLikesService {
         User user=getCurrentUser();
         boolean isAlreadyLiked=postLikeRepository.existsByPostAndUser(likedPost,user);
         if(isAlreadyLiked){
-            throw new DuplicateRequestException("post already liked");
+            throw new RuntimeException("post already liked");
         }
         PostLikes postLikes=new PostLikes();
         postLikes.setPost(likedPost);
