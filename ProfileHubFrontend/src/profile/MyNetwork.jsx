@@ -11,7 +11,7 @@ import {
 } from "../api/ProfileApi";
 
 import { formatDate } from "../utils/formatDate";
-import { sameId } from "../utils/connectionStatus";
+import { sameId } from "./connectionStatus";
 import Navbar from "../LandingPages/Navbar";
 
 // =========================================================
