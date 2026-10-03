@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 import { formatDate } from "../utils/formatDate";
-import { sameId } from "../utils/connectionStatus";
+import { sameId } from "./connectionStatus";
 
 import LikeCount from "./LikeCount";
 import Comment from "./Comment";
