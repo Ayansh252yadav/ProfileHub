@@ -10,7 +10,7 @@ import {
 import {
   getConnectionStatus,
   sameId
-} from "../utils/connectionStatus";
+} from "./connectionStatus";
 
 import FeedCard from "./FeedCard";
 
